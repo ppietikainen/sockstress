@@ -102,7 +102,7 @@ static void arp_procresp(uint8_t *userdata, const struct pcap_pkthdr *phdr, cons
 			case PKLTYPE_JUNK:
 				break;
 			default:
-				ERR("strange packet layer type %s", strpklayer(plz[j].type));
+				DBG("strange packet layer type %s", strpklayer(plz[j].type));
 				return;
 		}
 	}
