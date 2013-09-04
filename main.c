@@ -183,7 +183,7 @@ int main(int argc, char **argv) {
 	/* MUST BE LAST */
 	ADD_FUNC(do_random_stress, "randomly select one of the functions available", 'r');
 
-	memset(&remote_port[0], 0, sizeof(remote_port) * sizeof(remote_port[0]));
+	memset(&remote_port, 0, sizeof(remote_port));
 	remote_port[0]=DEF_RPORT;
 	rport_str=xstrdup(DEF_RPORT_STR);
 
